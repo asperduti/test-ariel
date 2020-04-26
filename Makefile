@@ -10,4 +10,4 @@ js-one-file:
 	cat $(JS_ASSETS)*.js > $(JS_ASSETS)all.js
 
 critical:
-	./node_modules/.bin/critical _site/index.html --base . > _includes/critical.css
+	./node_modules/.bin/critical _site/index.html --css _site/assets/css/style.css --base _site > _includes/critical.css

@@ -5,12 +5,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="assets/css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'"><!--https://www.filamentgroup.com/lab/load-css-simpler/-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" media="print" onload="this.media='all'">
         <title>Ultimate bootstrap template | Simple, Clean, Light and Ready to use Bootstrap Template</title>
         <style>
             {% capture include_to_scssify %}
-                {% include critical.scss %}
+                {% include critical.css %}
             {% endcapture %}
             {{ include_to_scssify | scssify }}
         </style>
