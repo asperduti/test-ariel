@@ -1,0 +1,6 @@
+title: Pancho theme
+description: Pancho is a Jekyll theme focused on speed performance and SEO best practices, built with Bootstrap4
+#theme: jekyll-theme-pancho
+# sass
+sass:
+  style: :compressed
