@@ -1,1 +1,67 @@
-{{ content }}
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <title>Ultimate bootstrap template | Simple, Clean, Light and Ready to use Bootstrap Template</title>
+        <style>
+            {% capture include_to_scssify %}
+                {% include critical.scss %}
+            {% endcapture %}
+            {{ include_to_scssify | scssify }}
+        </style>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/favicon.png" height="45" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link " href="blog.html">Blog</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        {{ content }}
+        <!--Footer-->
+        <footer class="bg-dark py-3">
+            <div class="container">
+                <div class="row text-center align-items-center">
+                    <div class="col">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+        
+                        <p>© 1988-2020 Pancho by <a href="https://arielsperduti.com">Ariel Sperduti</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/all.js" async defer></script>
+            
+    </body>
+        
+</html>
