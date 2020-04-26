@@ -1,5 +1,6 @@
 {
     "devDependencies": {
-        "purgecss": "2.1.2"
+        "purgecss": "2.1.2",
+        "critical": "2.0.0-24"
     }
 }

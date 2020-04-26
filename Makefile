@@ -8,3 +8,6 @@ build-js:
 
 js-one-file:
 	cat $(JS_ASSETS)*.js > $(JS_ASSETS)all.js
+
+critical:
+	./node_modules/.bin/critical _site/index.html --base . > _includes/critical.css
