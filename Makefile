@@ -7,6 +7,7 @@ build-js:
 	cp $(JS_SOURCES)* $(JS_ASSETS)
 
 js-one-file:
+	rm $(JS_ASSETS)all.js
 	cat $(JS_ASSETS)*.js > $(JS_ASSETS)all.js
 
 critical:
