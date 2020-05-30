@@ -77,6 +77,8 @@ This section should list any major frameworks that you built your project using.
 * [Pancho Bootstrap Template](https://github.com/asperduti/pancho-ultimate-bootstrap-template)
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
+* [PurgeCSS](https://purgecss.com/)
+* [critical](https://github.com/addyosmani/critical)
 
 
 
