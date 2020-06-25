@@ -1,18 +1,53 @@
-title: Pancho theme
-description: Pancho is a Jekyll theme focused on speed performance and SEO best practices, built with Bootstrap4
+title: Pancho theme # Your site's title
+tagline: Jekyll Ultimate Temaplate # A short description, used as part of the title
+description: Jekyll Start is a simple, clean and SEO optimized Jekyll Theme/Site ready to use!. Jekyll Start is the Jekyll version of Pancho, my Ultimate Bootstrap Template. The goal of this template is to achieve a 100 score in Google PageSpeed Insights, following the best web development techniques, focus on SEO, and implementing the last technologies like PWA.
+url: ariel.sperduti.com.ar # The full URL to your site.
+author: arielsperduti
+
+logo: # URL to a site-wide logo, 
+
+twitter:
+  username: arielsperduti # The site's Twitter handle. It not necessarily the same as the author
+  card: suummary # The site's default card type
+
+facebook:
+  app_id: # Facebook app ID for Facebook insights
+  publisher: # Facebook page URL or ID of the publishing entity
+  admins: # Facebook user ID for domain insights linked to a personal account
+
+social: # For specifyng social profiles
+  name: Ariel Sperduti
+  links:
+    - https://twitter.com/ArielSperduti
+    - https://facebook.com/ariel.sperduti
+    - https://linkedin.com/in/arielsperduti
+    - https://github.com/arielsperduti
+    - https://instagram.com/arielsperduti
+
+webmaster_verifications: # Verify ownership with several services at
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234
+
+lang:  en_US # Locale tag follow the format language_TERRITORY
+
 #theme: jekyll-theme-pancho
 
 # sass
 sass:
   style: :compressed
 
-# jekyll-purgecss
 plugins:
   - jekyll-purgecss
+  - jekyll-seo-tag
 
 css_dir: "assets/css" # defaults to "css"
-
 
 exclude: 
   - node_modules
   - vendor
+
+include:
+  - _pages

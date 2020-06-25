@@ -2,4 +2,61 @@
 layout: default
 ---
 
-{{ content }}
+<!--Hi-iam quick introduction-->
+<header id="blog-post-header">
+    <section id="hi-iam" class="block bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center align-items-center">
+                    <h1>{{ page.title }}</h1>
+                    <p class="small">
+                        <img src="{{ site.data.authors[page.author].picture }}" alt="{{ page.author }}'s photo"
+                            class="blog-post-header-author-img img-fluid rounded-circle bg-grey">
+                        by {{ page.author }}. Updated on Feb. 04, 2020
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<main class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            {{ content }}
+
+            <div id="blog-post-footer" class="container bg-grey">
+                <div class="row align-items-center text-center p-3 mb-5 mt-5">
+                    <div class="col-4 m-auto pb-4 pb-md-0">
+                        <img src="{{ site.data.authors[page.author].picture }}" alt="{{ page.author }}'s photo" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-12 ml-auto col-md-8">
+                        <h4>
+                            {{ page.author }}
+                        </h4>
+                        <p>
+                            {{ site.data.authors[page.author].description }}
+                        </p>
+                        <p>
+                            <a href="https://github.com/asperduti" class="mx-2 text-secondary"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/arielsperduti" class="mx-2 text-secondary"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/arielsperduti" class="mx-2 text-secondary"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://youtube.com/https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCbrGLkc9j9SysV3luRzJYIg?fbclid=IwAR0Udn-slqYbb6JMMf4uZv7-98oYka0JLGstkzxnCdQThD6qAQMkJ2fE2Ig"
+                                class="mx-2 text-secondary"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/in/arielsperduti/?locale=en_US"
+                                class="mx-2 text-secondary"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/ariel.sperduti" class="mx-2 text-secondary"><i
+                                    class="fab fa-facebook"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+</div>
