@@ -1,5 +1,9 @@
 markup_presets:
   default:
     formats: [webp, original]
+    markup: data_auto
+    attributes: 
+        img: class="lazy"
   icon:
+    formats: [webp, original]
     widths: [30]
