@@ -18,7 +18,7 @@ sitemap:
     </image>
     {% endif %}
     <webfeeds:cover image="{{ site.logo | prepend: site.baseurl | prepend: site.url }}" />
-    <webfeeds:icon>{{ site.logo" | prepend: site.baseurl | prepend: site.url }}</webfeeds:icon>
+    <webfeeds:icon>{{ site.logo | prepend: site.baseurl | prepend: site.url }}</webfeeds:icon>
     <webfeeds:logo>{{ site.logo | prepend: site.baseurl | prepend: site.url }}</webfeeds:logo>
     <webfeeds:accentColor>F0FF00</webfeeds:accentColor>
     <webfeeds:related layout="card" target="browser"/>
