@@ -1,0 +1,73 @@
+name: Build and deploy Jekyll site to GitHub Pages
+
+defaults:
+  run:
+    shell: sh
+
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Clone Repo
+        uses: actions/checkout@v2
+        with:
+          ref: develop
+      
+      - name: Install ImageMagick
+        run: sudo apt-get install imagemagick
+      
+      - name: Install Webp
+        run: curl -s https://raw.githubusercontent.com/Intervox/node-webp/latest/bin/install_webp | sudo bash
+      
+      - name: Install NPM dependencies
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - run: npm install
+
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+      
+      - name: Build assets
+        run: |
+          make js-one-file
+          for file in assets/images/*; do cwebp "${file}" -o "${file%.*}.webp"; done
+      
+      - name: Install gems and deploy
+        run: |
+          bundle install
+          JEKYLL_ENV=production jekyll build
+      
+      - name: Generate Critical
+        run: |
+          make critical
+          JEKYLL_ENV=production jekyll build          
+      
+      - name: Commit
+        run: |
+          cd _site
+          git init
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Add changes" -a
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.JEKYLL_PAT }}
+          branch: master
+          force: true
+          directory: _site
+
+
+      
+      

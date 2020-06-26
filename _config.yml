@@ -48,6 +48,15 @@ css_dir: "assets/css" # defaults to "css"
 exclude: 
   - node_modules
   - vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - Makefile
+  - README.md
+  - package-lock.json
+  - package.json
+  - pancho.gemspec
+  - purgecss.config.js
 
 include:
   - _pages
