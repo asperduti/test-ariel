@@ -52,7 +52,10 @@ title: Ultimate bootstrap template | Simple, Clean, Light and Ready to use Boots
                     <div class="col">
                         <span>Built with</span>
                         <a href="https://getbootstrap.com/">
-                            {% include picture.html img="/assets/images/bs4.png" class="ml-3 mr-3 mb-2 mt-2" alt="" height="30" %}
+                            {% picture icon assets/images/bs4.png
+                                --img class="ml-3 mr-3 mb-2 mt-2"
+                                --alt Bootstrap4
+                            %}
                         </a>
                         <a href="https://sass-lang.com/">
                             {% include picture.html img="/assets/images/sass.png" class="ml-3 mr-3 mb-2 mt-2" alt="" height="30" %}

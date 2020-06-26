@@ -1,3 +1,5 @@
 markup_presets:
   default:
     formats: [webp, original]
+  icon:
+    widths: [30]
