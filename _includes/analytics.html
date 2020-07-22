@@ -1,0 +1,15 @@
+{% if site.analytics_verifications.google %}
+	<!-- Google Analytics -->
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<script>
+		window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+
+		ga('create', '{{ site.analytics_verifications.google }}', 'auto');
+		ga('send', 'pageview', {
+		  'page': '{{ page.url }}',
+		  'title': '{{ page.title | replace: "'", "\\'" }}'
+		});
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- End Google Analytics -->
+{% endif %}

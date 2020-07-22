@@ -13,4 +13,4 @@ critical:
 	./node_modules/.bin/critical _site/index.html --css _site/assets/css/style.css --base _site > _includes/critical.css
 
 convert-images-webp:
-	for file in assets/images/*; do cwebp "${file}" -o "${file%.*}.webp"; done
+	for file in assets/images/*.{jpg,jpeg,png}; do cwebp "${file}" -o "${file%.*}.webp"; done

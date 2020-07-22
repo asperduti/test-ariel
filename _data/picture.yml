@@ -3,7 +3,10 @@ markup_presets:
     formats: [webp, original]
     markup: data_auto
     attributes: 
-        img: class="lazy"
+        img: class="lazyload"
   icon:
+    markup: data_auto
     formats: [webp, original]
     widths: [30]
+    attributes: 
+        img: 'class="lazyload" width="30px"'

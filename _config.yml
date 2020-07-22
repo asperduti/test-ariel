@@ -31,7 +31,10 @@ webmaster_verifications: # Verify ownership with several services at
   yandex: 1234
   baidu: 1234
 
-lang:  en_US # Locale tag follow the format language_TERRITORY
+analytics_verifications:
+  google: UA-xxxxxx-xx  
+  
+lang:  es_ES # Locale tag follow the format language_TERRITORY
 
 #theme: jekyll-theme-pancho
 
