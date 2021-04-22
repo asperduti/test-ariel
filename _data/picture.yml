@@ -1,12 +1,24 @@
-markup_presets:
+media_queries:
+  xs: 'max-width: 575px'
+  sm: 'max-width: 767px'
+  md: 'max-width: 991px'
+  lg: 'max-width: 1199px'
+  xl: 'max-width: 1399px'
+  xxl: 'max-width: 1400px'
+
+presets:
   default:
     formats: [webp, original]
     markup: data_auto
+    dimension_attributes: true
+    size: 400px
     attributes: 
         img: class="lazyload"
   icon:
-    markup: data_auto
     formats: [webp, original]
-    widths: [30]
+    markup: data_auto
+    dimension_attributes: false
+    widths: [30, 30, 30, 30, 30, 30]
+    size: 30px
     attributes: 
-        img: 'class="lazyload" width="30px"'
+        img: 'class="lazyload" height="45"'

@@ -10,7 +10,11 @@ title: Ultimate bootstrap template | Simple, Clean, Light and Ready to use Boots
                 <div class="container">
                     <div class="row align-items-center text-center p-3 mb-5 mt-5">
                         <div class="col-10 col-sm-6 m-auto col-md-4 pb-4 pb-md-0">
-                            {% include picture.html img="/assets/images/profile_pic.png" class="img-fluid rounded-circle bg-grey" alt="Profile PIC" %}
+                            {% picture assets/images/profile_pic.png
+                                --alt Profile PIC
+                                --title Profile PIC
+                                --img class="img-fluid rounded-circle bg-grey"
+                            %}
                         </div>
                         <div class="col-12 ml-auto col-md-6 col-lg-5">
                             <h1 id="name-header">
@@ -46,13 +50,21 @@ title: Ultimate bootstrap template | Simple, Clean, Light and Ready to use Boots
             <!--Built with-->
             <div class="container-fluid bg-grey block">
                 <div class="row text-center">
-                    <div class="col">
+                    <div class="col" height="30px">
                         <span>Built with</span>
                         <a href="https://getbootstrap.com/">
-                            {% include picture.html img="/assets/images/bs4.png" class="ml-3 mr-3 mb-2 mt-2" alt="" height="30" %}
+                            {% picture icon assets/images/bs4.png
+                                --alt Profile PIC
+                                --title Profile PIC
+                                --img class="ml-3 mr-3 mb-2 mt-2"
+                            %}
                         </a>
                         <a href="https://sass-lang.com/">
-                            {% include picture.html img="/assets/images/sass.png" class="ml-3 mr-3 mb-2 mt-2" alt="" height="30" %}
+                            {% picture icon assets/images/sass.png
+                                --alt Profile PIC
+                                --title Profile PIC
+                                --img class="ml-3 mr-3 mb-2 mt-2"
+                            %}
                         </a>
                     </div>
                 </div>
@@ -61,7 +73,11 @@ title: Ultimate bootstrap template | Simple, Clean, Light and Ready to use Boots
             <div class="container bg-white block">
                 <div class="row align-items-center text-center p-3 mb-5 mt-5">
                     <div class="col-10 col-sm-6 m-auto col-md-4 pb-4 pb-md-0">
-                        {% include picture.html img="/assets/images/feature.png" class="img-fluid" alt="Features" height="30" %}
+                        {% picture assets/images/feature.png
+                            --alt Features
+                            --title Features
+                            --img class="img-fluid ml-3 mr-3 mb-2 mt-2"
+                        %}
                     </div>
                     <div class="col-12 ml-auto col-md-6 col-lg-5">
                         <h1 id="name-header">
@@ -137,8 +153,11 @@ title: Ultimate bootstrap template | Simple, Clean, Light and Ready to use Boots
                         <article>
                             <div class="card mb-3">
                                 <a href="/example-post">
-                                    <img src="https://i.ytimg.com/vi/oTNMPiYDa-M/maxresdefault.jpg" class="lazyload card-img-top"
-                                        alt="...">
+                                    {% picture assets/images/example-post.jpg
+                                        --alt Example post
+                                        --title Example post
+                                        --img class="card-img-top img-fluid"
+                                    %}
                                 </a>
                                 <div class="card-body">
                                     <a href="/example-post">
@@ -158,8 +177,11 @@ title: Ultimate bootstrap template | Simple, Clean, Light and Ready to use Boots
                         <article>
                             <div class="card mb-3">
                                 <a href="/example-post">
-                                    <img src="https://i.ytimg.com/vi/oTNMPiYDa-M/maxresdefault.jpg" class="lazyload card-img-top"
-                                        alt="...">
+                                    {% picture assets/images/example-post.jpg
+                                        --alt Example post
+                                        --title Example post
+                                        --img class="card-img-top img-fluid"
+                                    %}
                                 </a>
                                 <div class="card-body">
                                     <a href="/example-post">

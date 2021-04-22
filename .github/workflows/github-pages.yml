@@ -46,6 +46,7 @@ jobs:
       - name: Build assets
         run: |
           make js-one-file
+          for file in assets/images/*.{jpg,jpeg,png}; do cwebp "$file" -o "${file%.*}.webp"; done
       
       - name: Install gems and deploy
         run: |
