@@ -8,7 +8,6 @@
 
 
 
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -38,7 +37,7 @@
     <a href="https://github.com/asperduti/jekyllstart"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/asperduti/jekyllstart">View Demo</a>
+    <a href="https://arielsperduti.com">View Demo</a>
     ·
     <a href="https://github.com/asperduti/jekyllstart/issues">Report Bug</a>
     ·
@@ -55,8 +54,12 @@
 - [About The Project](#about-the-project)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
+  - [System Requirements](#system-requirements)
+  - [Jekyll](#jekyll)
+  - [npm](#npm)
   - [Installation](#installation)
 - [Usage](#usage)
+  - [Images](#images)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -85,6 +88,16 @@ This section should list any major frameworks that you built your project using.
 <!-- GETTING STARTED -->
 ## Getting Started
 
+### System Requirements
+In order to develop or build this project locally you'll need the following resources:
+
+### Jekyll
+```sh
+gem install jekyll
+```
+### npm
+[Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
 
 ### Installation
 
@@ -101,7 +114,7 @@ git clone https://github.com/asperduti/jekyllstart.git
     ```
     Option 2: If you have Docker:
     ```sh
-    $ docker run -p 4000:4000 --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=development jekyll/jekyll:3.8 jekyll serve
+    $ docker run -p 4000:4000 --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:4.0 /bin/bash -c "jekyll serve"
     ```
 3b. Build your site:
     In order to serve your site to Internet you will need to build it and publish it, if you are using Github Pages, this is not needed it.
@@ -117,6 +130,8 @@ git clone https://github.com/asperduti/jekyllstart.git
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
+### Images
 
 
 
@@ -150,7 +165,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Ariel Sperduti - [@your_twitter](https://twitter.com/arielsperduti) - email@example.com
+Ariel Sperduti - [@arielsperduti](https://twitter.com/arielsperduti)
 
 Project Link: [https://github.com/asperduti/jekyllstart](https://github.com/asperduti/jekyllstart)
 

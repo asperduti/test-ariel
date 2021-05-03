@@ -11,14 +11,12 @@ presets:
     formats: [webp, original]
     markup: data_auto
     dimension_attributes: true
-    size: 400px
     attributes: 
         img: class="lazyload"
   icon:
     formats: [webp, original]
     markup: data_auto
     dimension_attributes: false
-    widths: [30, 30, 30, 30, 30, 30]
-    size: 30px
+    widths: [30]
     attributes: 
-        img: 'class="lazyload" height="45"'
+        img: 'class="lazyload" height="30"'

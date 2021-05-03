@@ -5,6 +5,7 @@ _site
 Gemfile.lock
 node_modules/
 vendor/
+.jekyll-cache
 !_sass/vendor/
 !_sass/vendor/bootstrap/vendor
 package-lock.json
