@@ -57,11 +57,15 @@
   - [System Requirements](#system-requirements)
   - [Jekyll](#jekyll)
   - [npm](#npm)
+  - [PurgeCSS](#purgecss)
   - [Installation](#installation)
 - [Usage](#usage)
-  - [Images](#images)
+  - [CUstomizing](#customizing)
+    - [Styles](#styles)
+- [~~~scss](#scss)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
+- [How to start to develop](#how-to-start-to-develop)
 - [License](#license)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -98,8 +102,57 @@ gem install jekyll
 ### npm
 [Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
+### PurgeCSS
+
 
 ### Installation
+
+1. It's extremaly recomment to copy the `_config.yml` from this repo, if not at least set the theme in your site's `_config.yml`:
+  ~~~yml
+  theme: pancho
+  ~~~
+2. Add the gem to your `Gemfile`:
+  ~~~ruby
+  gem 'pancho', :git => 'git://github.com/asperduti/test-ariel.git'
+  ~~~
+3. Copy the `purgecss.config.js` into yout site's folder.
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+
+### CUstomizing
+
+#### Styles
+
+If you'd like to add custom styles:
+1. Create a filled called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file:
+  ~~~scss
+  ---
+  ---
+
+  @import "{{ site.theme }}";
+  ~~~
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/asperduti/jekyllstart/issues) for a list of proposed features (and known issues).
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## How to start to develop
 
 1. Clone the repo
 ```sh
@@ -125,35 +178,6 @@ git clone https://github.com/asperduti/jekyllstart.git
     Option 2: If you have Docker:
     ```sh
     $ docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:3.8 jekyll build
-    ```
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-### Images
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/asperduti/jekyllstart/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
 
 <!-- LICENSE -->
 ## License
