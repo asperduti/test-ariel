@@ -10,4 +10,4 @@ vendor/
 !_sass/vendor/bootstrap/vendor
 package-lock.json
 assets/images/*.webp
-!_includes/inline.css
+_includes/inline.css
