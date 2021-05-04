@@ -10,5 +10,3 @@ vendor/
 !_sass/vendor/bootstrap/vendor
 package-lock.json
 assets/images/*.webp
-assets/js/*
-!assets/js/.gitkeep
