@@ -14,7 +14,7 @@ layout: compress
         {% if inline_css == "true" %}
             <style>
                 {% capture include_to_scssify %}
-                    {% include inline_css.css %}
+                    {% include inline.css %}
                 {% endcapture %}
                 {{ include_to_scssify | scssify }}
             </style>
