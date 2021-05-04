@@ -9,15 +9,22 @@ layout: compress
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'">
-        <!--https://www.filamentgroup.com/lab/load-css-simpler/-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" media="print" onload="this.media='all'">
-        <style>
-            {% capture include_to_scssify %}
-                {% include critical.css %}
-            {% endcapture %}
-            {{ include_to_scssify | scssify }}
-        </style>
+
+        {% capture inline_css %}{% file_exists {{ '_includes/inline.css' }} %}{% endcapture %}
+        {% if inline_css == "true" %}
+            <style>
+                {% capture include_to_scssify %}
+                    {% include inline_css.css %}
+                {% endcapture %}
+                {{ include_to_scssify | scssify }}
+            </style>
+        {% else %}
+            <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'"><!--https://www.filamentgroup.com/lab/load-css-simpler/-->
+        {% endif %}
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" media="print"
+            onload="this.media='all'">
+
         {% seo %}
         {% include analytics.html %}
     </head>
