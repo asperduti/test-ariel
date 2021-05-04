@@ -14,7 +14,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", "~> 4.0"
   spec.add_runtime_dependency "jekyll-purgecss", "~> 2.0"
-  spec.add_runtime_dependency "jekyll-purgecss"
   spec.add_runtime_dependency "jekyll-seo-tag"
   spec.add_runtime_dependency "jekyll-purgecss"
   
