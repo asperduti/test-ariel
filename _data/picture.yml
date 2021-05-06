@@ -16,7 +16,7 @@ presets:
   icon:
     formats: [webp, original]
     markup: data_auto
-    dimension_attributes: false
-    widths: [30]
+    dimension_attributes: true
+    widths: [60]
     attributes: 
-        img: 'class="lazyload" height="30"'
+        img: 'class="lazyload" style="max-height: 30px; width:auto;"'
