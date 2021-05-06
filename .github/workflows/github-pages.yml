@@ -27,7 +27,7 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('~/assets/images/') }}
 
       - name: Install ImageMagick and LibVips
-        run: sudo apt-get install imagemagick libvips
+        run: sudo apt-get install imagemagick libvips libvips-dev
       
       - name: Install Webp
         run: curl -s https://raw.githubusercontent.com/Intervox/node-webp/latest/bin/install_webp | sudo bash
