@@ -34,7 +34,7 @@ webmaster_verifications: # Verify ownership with several services at
 analytics_verifications:
   google: UA-xxxxxx-xx  
   
-lang:  es_ES # Locale tag follow the format language_TERRITORY
+lang:  en # Locale tag follow the format language-TERRITORY
 
 #theme: jekyll-theme-pancho
 

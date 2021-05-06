@@ -1,19 +1,21 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top">
-    <a class="navbar-brand" href="#">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
         {% picture icon assets/images/favicon.png
             --alt Logo
             --title Logo
         %}
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             {% for item in site.data.navigation %}
-            <a class="nav-item nav-link{% if page.permalink == item.link %} active{% endif %}"
+            <a class="nav-link{% if page.permalink == item.link %} active{% endif %}"
                 href="{{ item.link | relative_url }}">{{ item.name }} {% if page.permalink == item.link %}<span
                     class="sr-only">(current)</span> {% endif %}</a>
             {% endfor %}
