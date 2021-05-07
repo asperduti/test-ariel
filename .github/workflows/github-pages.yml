@@ -48,10 +48,10 @@ jobs:
           bundle install
           JEKYLL_ENV=production jekyll build
       
-      - name: Generate Critical
-        run: |
-          make critical
-          JEKYLL_ENV=production jekyll build          
+      # - name: Generate Critical
+      #   run: |
+      #     make critical
+      #     JEKYLL_ENV=production jekyll build          
       
       - name: Commit
         run: |
