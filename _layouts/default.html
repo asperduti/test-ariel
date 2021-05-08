@@ -19,7 +19,7 @@ layout: compress
                 {{ include_to_scssify | scssify }}
             </style>
         {% else %}
-            <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'"><!--https://www.filamentgroup.com/lab/load-css-simpler/-->
+            <link rel="stylesheet" href="{% link assets/css/style.css %}" media="print" onload="this.media='all'"><!--https://www.filamentgroup.com/lab/load-css-simpler/-->
         {% endif %}
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" media="print"
@@ -38,7 +38,7 @@ layout: compress
         
         {% include lazysizes.html %}
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="/assets/js/all.js" async defer></script>
+        <script src="{% link assets/js/all.js %}" async defer></script>
             
     </body>
         

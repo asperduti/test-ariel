@@ -2,6 +2,7 @@ title: Pancho theme # Your site's title
 tagline: Jekyll Ultimate Temaplate # A short description, used as part of the title
 description: Jekyll Start is a simple, clean and SEO optimized Jekyll Theme/Site ready to use!. Jekyll Start is the Jekyll version of Pancho, my Ultimate Bootstrap Template. The goal of this template is to achieve a 100 score in Google PageSpeed Insights, following the best web development techniques, focus on SEO, and implementing the last technologies like PWA.
 url: ariel.sperduti.com.ar # The full URL to your site.
+baseurl: ''
 author: arielsperduti
 
 logo: # URL to a site-wide logo, 
