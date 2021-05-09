@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: ariel.sperduti.com.ar/sitemap.xml

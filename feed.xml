@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:webfeeds="http://webfeeds.org/rss/1.0" version="2.0">
+  <channel>
+    <title></title>
+    <description><![CDATA[Jekyll Start is a simple, clean and SEO optimized Jekyll Theme/Site ready to use!. Jekyll Start is the Jekyll version of Pancho, my Ultimate Bootstrap Template. The goal of this template is to achieve a 100 score in Google PageSpeed Insights, following the best web development techniques, focus on SEO, and implementing the last technologies like PWA.]]></description>
+    <link>ariel.sperduti.com.ar</link>
+    <lastBuildDate>Sun, 09 May 2021 15:26:06 +0000 </lastBuildDate>
+    
+    <webfeeds:cover image="ariel.sperduti.com.ar" />
+    <webfeeds:icon>ariel.sperduti.com.ar</webfeeds:icon>
+    <webfeeds:logo>ariel.sperduti.com.ar</webfeeds:logo>
+    <webfeeds:accentColor>F0FF00</webfeeds:accentColor>
+    <webfeeds:related layout="card" target="browser"/>
+    
+  </channel>
+</rss>
