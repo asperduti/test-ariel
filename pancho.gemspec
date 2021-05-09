@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
     f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
   spec.add_runtime_dependency "jekyll", "4.0"
-  spec.add_runtime_dependency "jekyll_picture_tag", "2.0.2"
+  spec.add_runtime_dependency "jekyll_picture_tag", "2.0"
   spec.add_runtime_dependency "jekyll-purgecss", "0.3.0"
   spec.add_runtime_dependency "jekyll-seo-tag", "2.6.1"
   spec.add_runtime_dependency "jekyll_file_exists"
