@@ -10,8 +10,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://arielsperduti.com"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
-
+  spec.files         = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
+  end
   spec.add_runtime_dependency "jekyll", "~> 4.0"
   spec.add_runtime_dependency "jekyll_picture_tag", "~> 2.0.2"
   spec.add_runtime_dependency "jekyll-purgecss", "~> 0.3.0"
