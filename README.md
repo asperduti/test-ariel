@@ -59,6 +59,8 @@
   - [npm](#npm)
   - [PurgeCSS](#purgecss)
   - [Installation](#installation)
+    - [CI/CD](#cicd)
+    - [Inline CSS](#inline-css)
 - [Usage](#usage)
   - [CUstomizing](#customizing)
     - [Styles](#styles)
@@ -107,7 +109,7 @@ gem install jekyll
 
 ### Installation
 
-1. It's extremaly recomment to copy the `_config.yml` from this repo, if not at least set the theme in your site's `_config.yml`:
+1. It's extremely recommend to copy the `_config.yml` from this repo, if not at least set the theme in your site's `_config.yml`:
   ~~~yml
   theme: pancho
   ~~~
@@ -115,7 +117,25 @@ gem install jekyll
   ~~~ruby
   gem 'pancho', :git => 'git://github.com/asperduti/test-ariel.git'
   ~~~
-3. Copy the `purgecss.config.js` into yout site's folder.
+3. You will need to copy the following files to your site's folder:
+   - `purgecss.config.js`
+   - `package.json`
+   - `_data/picture.myl`
+
+4. [Optional] Also, is recommended to copy the following files to your site's folder:
+   - `_data/authors.yml`
+   - `_data/navigation.yml`
+   - `robots.txt`
+   - `sitemap.xml`
+   - `feed.xml`
+
+  You can edit this files to your needs.
+
+#### CI/CD
+In the repo you have two templates to configure CI/CD in GItlab on Github. Copy what you need into your folder's site.
+
+#### Inline CSS
+If you want to have inline css, you can copy the generated `styles.ccs` into `_includes/inline.css`. It's posible add this step into the CI/CD flow.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
