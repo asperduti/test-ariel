@@ -12,24 +12,24 @@ sitemap:
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }} </lastBuildDate>
     {% if site.logo %}
     <image>
-        <url>{{ site.url }}{{ site.logo }}</url>
+        <url>{{ site.logo | absolute_url }}</url>
         <link>{{ site.url }}</link>
         <title>{{ site.name | xml_escape }}</title>
     </image>
     {% endif %}
-    <webfeeds:cover image="{{ site.logo | prepend: site.baseurl | prepend: site.url }}" />
-    <webfeeds:icon>{{ site.logo | prepend: site.baseurl | prepend: site.url }}</webfeeds:icon>
-    <webfeeds:logo>{{ site.logo | prepend: site.baseurl | prepend: site.url }}</webfeeds:logo>
+    <webfeeds:cover image="{{ site.logo | absolute_url }}" />
+    <webfeeds:icon>{{ site.logo | absolute_url }}</webfeeds:icon>
+    <webfeeds:logo>{{ site.logo | absolute_url }}</webfeeds:logo>
     <webfeeds:accentColor>F0FF00</webfeeds:accentColor>
     <webfeeds:related layout="card" target="browser"/>
     {% for post in site.posts %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description><![CDATA[{% if post.ogimg %}
-     <img src="{{ post.ogimg | prepend: site.baseurl | prepend: site.url  }}" alt="Smiley face" height="315" width="600" class="webfeedsFeaturedVisual">{% endif %}{{ post.content }}]]></description>
+     <img src="{{ post.ogimg | absolute_url  }}" alt="Smiley face" height="315" width="600" class="webfeedsFeaturedVisual">{% endif %}{{ post.content }}]]></description>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="false">{{ site.url }}{{ post.url }}{{ post.date }}</guid>
+        <link>{{ post.url | absolute_url }}</link>
+        <guid isPermaLink="false">{{ post.url | absolute_url }}#{{ post.date | date_to_xmlschema }}</guid>
       </item>
     {% endfor %}
   </channel>
